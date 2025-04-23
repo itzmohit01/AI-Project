@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fitness Streak Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Streak Tracker</h1>
+        <div class="user-info">
+            Welcome, <span id="username-display">User</span>!
+            <a href="logout.php" class="logout-button">Logout</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="streak-section card">
+            <h2>Your Current Streak</h2>
+            <div class="streak-display">
+                <span id="streak-count">0</span> Days 🔥
+            </div>
+            <button id="log-workout-btn">Log Today's Workout</button>
+            <p id="log-message" class="message"></p>
+        </section>
+
+        <section class="chatbot-section card">
+            <h2>Chat with Sparky (AI Coach)</h2>
+            <div id="chat-history">
+                <div class="message ai">Hey there! Ready to crush your fitness goals today? Ask me anything or let me know how you're feeling!</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-message" placeholder="Type your message...">
+                <button id="send-chat-btn">Send</button>
+            </div>
+            <p id="chat-error" class="message error"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
